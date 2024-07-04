@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#7EEC46"
     android:gravity="center"
+    android:orientation="vertical"
     android:padding="10dp"
-    android:background="#E1BEE7"
     tools:context=".LoginPage">
 
     <TextView
@@ -20,6 +19,7 @@
         android:layout_marginBottom="20dp"
         android:text="IMS Login Portal"
         android:textAlignment="center"
+        android:textColor="#F60505"
         android:textSize="48sp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
@@ -27,31 +27,31 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:src="@drawable/img"
-        android:scaleType="centerCrop"
         android:layout_marginBottom="-10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
         tools:ignore="ContentDescription" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="70dp"
-        android:hint="Enter Email"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="22sp"
-        android:inputType="text"
         android:layout_marginTop="10dp"
+        android:hint="Enter Email"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
         tools:ignore="HardcodedText" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="70dp"
-        android:hint="Enter Password"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="22sp"
-        android:inputType="numberPassword"
         android:layout_marginTop="10dp"
+        android:hint="Enter Password"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
         tools:ignore="HardcodedText" />
 
     <Button
@@ -75,19 +75,21 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="Don't have account?"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="25dp"
-        android:layout_marginTop="5dp"
+        android:textStyle="bold|italic"
         tools:ignore="HardcodedText,SpUsage" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/sign"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:text="Sign Up"
-        android:textSize="24sp"
-        android:textColor="#FFFFFF" /> <!-- White text color -->
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" /> <!-- White text color -->
 
 </LinearLayout>

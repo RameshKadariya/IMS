@@ -1,42 +1,40 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#CB3FE3"
     android:gravity="center_horizontal"
-    android:padding="10dp"
-    android:background="#E1BEE7"> <!-- Light Purple background color -->
+    android:orientation="vertical"
+    android:padding="10dp"> <!-- Light Purple background color -->
 
     <TextView
-        tools:ignore="HardcodedText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="@font/tajawal_bold"
         android:text="Inventory Management System"
-        android:textColor="#521F91"
-        android:textSize="24sp" />
-
+        android:textColor="#EBE7EF"
+        android:textSize="34sp"
+        tools:ignore="HardcodedText" />
 
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/img_1" />
 
     <Button
         android:id="@+id/btn"
-        tools:ignore="HardcodedText"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:text="Login"
-        android:textSize="30sp"
         android:background="#6A1B9A"
-        android:textColor="#FFFFFF" />
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:ignore="HardcodedText" />
 </LinearLayout>
