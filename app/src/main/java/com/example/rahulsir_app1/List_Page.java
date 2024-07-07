@@ -11,13 +11,6 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import com.example.rahulsir_app1.LoginPage;
-import com.example.rahulsir_app1.R;
-import com.example.rahulsir_app1.singup;
 
 public class List_Page extends AppCompatActivity {
     ListView listview;
@@ -32,7 +25,7 @@ public class List_Page extends AppCompatActivity {
 
         listview = findViewById(R.id.list);
 
-        ArrayAdapter arrayAdapter=new ArrayAdapter<String>(this, androidx
+        ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this, androidx
                 .appcompat.R.layout.support_simple_spinner_dropdown_item,List_of_Data);
         listview.setAdapter(arrayAdapter);
 
@@ -44,7 +37,7 @@ public class List_Page extends AppCompatActivity {
                     startActivity(intent1);
                     Toast.makeText(List_Page.this, "click on nepal", Toast.LENGTH_SHORT).show();
                 }else if(i==1){
-                    Intent intent2= new Intent(getApplicationContext(), singup.class);
+                    Intent intent2= new Intent(getApplicationContext(), signup.class);
                     startActivity(intent2);
                 }
                 else if(i==2){
