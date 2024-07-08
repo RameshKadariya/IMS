@@ -41,7 +41,7 @@ public class List_Page extends AppCompatActivity {
                     startActivity(intent2);
                 }
                 else if(i==2){
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.puthon.org/"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.python.org/"));
                     startActivity(intent);
                 }
             }
